@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../../assets/europa.svg" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="../../assets/continentes/europa.svg"
+      type="image/x-icon"
+    />
     <style>
       .inicio {
         box-shadow: inset 0px 0px 15px 3px #23395e;
@@ -24,6 +28,8 @@
       .inicio:hover {
         background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
         background-color: #415989;
+        transform: scale(1.1);
+        transition: 0.25s;
       }
       .inicio:active {
         position: relative;
@@ -47,26 +53,28 @@
     >
       <h1>Europa</h1>
 
-      <h5>
+      <h6>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem velit,
         ipsam a ea provident consequatur est repellendus distinctio corrupti
         autem officiis, cumque officia rerum consectetur eveniet libero
         voluptate quibusdam reiciendis necessitatibus modi? In aliquid ab illum
         inventore et voluptate, magnam error officia! Est, vitae. Ducimus
         laudantium necessitatibus veniam culpa iste?
-      </h5>
+      </h6>
 
       <div class="imagenes">
         <img
           style="border: 2px solid white; border-radius: 10px"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0OuO5z7tunIbJHHCEFXO1RllG-ToE3U5c_A&usqp=CAU"
+          src="https://www.travelandleisure.com/thmb/SPUPzO88ZXq6P4Sm4mC5Xuinoik=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/eiffel-tower-paris-france-EIFFEL0217-6ccc3553e98946f18c893018d5b42bde.jpg"
+          type="image/jpeg"
           alt="Torre Eiffel"
           title="Torre Eiffel"
-          width="30%"
+          width="32%"
         />
         <img
           style="border: 2px solid white; border-radius: 10px"
           src="https://upload.wikimedia.org/wikipedia/commons/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg"
+          type="image/jpeg"
           alt="Coliseo Romano"
           title="Coliseo Romano"
           width="34%"
@@ -74,27 +82,21 @@
         <img
           style="border: 2px solid white; border-radius: 10px"
           src="https://media.timeout.com/images/105737732/image.jpg"
+          type="image/jpeg"
           alt="La Sagrada Familia"
           title="La Sagrada Familia"
-          width="27%"
+          width="26.65%"
         />
       </div>
 
       <a href="../index.html">
         <button class="inicio">
-          <svg
-            fill="white"
-            xmlns="http://www.w3.org/2000/svg"
-            height="35"
-            viewBox="0 0 24 24"
-            width="35"
-            fill="#FFFFFF"
-          >
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-.61.08-1.21.21-1.78L8.99 15v1c0 1.1.9 2 2 2v1.93C7.06 19.43 4 16.07 4 12zm13.89 5.4c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41C17.92 5.77 20 8.65 20 12c0 2.08-.81 3.98-2.11 5.4z"
-            />
-          </svg>
+          <img
+            src="../../assets/inicio.svg"
+            type="image/svg+xml"
+            alt="Inicio"
+            title="Inicio"
+          />
         </button>
       </a>
     </div>

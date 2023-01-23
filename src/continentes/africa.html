@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../../assets/africa.svg" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="../../assets/continentes/africa.svg"
+      type="image/x-icon"
+    />
     <style>
       .inicio {
         box-shadow: inset 0px 0px 15px 3px #23395e;
@@ -14,7 +18,7 @@
         border: 1px solid #1f2f47;
         display: inline-block;
         cursor: pointer;
-        color: #ffffff;
+        color: white;
         font-family: Arial;
         font-size: 15px;
         padding: 6px 13px;
@@ -24,6 +28,8 @@
       .inicio:hover {
         background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
         background-color: #415989;
+        transform: scale(1.1);
+        transition: 0.25s;
       }
       .inicio:active {
         position: relative;
@@ -47,19 +53,20 @@
     >
       <h1>Africa</h1>
 
-      <h5>
+      <h6>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero alias
         nisi ad quam voluptates id? Sequi, totam? Cumque deserunt eveniet
         debitis repudiandae maxime accusantium numquam aliquid qui voluptate,
         quo dolorem dicta consectetur ab ratione consequatur, eius repellendus
         eum fugiat perferendis quia reiciendis. Expedita sequi ratione nisi,
         dolores laboriosam provident numquam?
-      </h5>
+      </h6>
 
       <div class="imagenes">
         <img
           style="border: 2px solid white; border-radius: 10px"
           src="https://globalcastaway.com/wp-content/uploads/2020/09/travel-bucket-list-egypt.jpg"
+          type="image/jpeg"
           alt="Gran Esfinge de Guiza"
           title="Gran Esfinge de Guiza"
           width="30%"
@@ -67,34 +74,29 @@
         <img
           style="border: 2px solid white; border-radius: 10px"
           src="https://cdn.britannica.com/33/153433-050-F76BDF75/Sunrise-Mount-Kilimanjaro-Tanzania.jpg"
+          type="image/jpeg"
           alt="Kilimanjaro"
           title="Kilimanjaro"
-          width="31%"
+          width="30.7%"
         />
         <img
           style="border: 2px solid white; border-radius: 10px"
           src="https://viajes.nationalgeographic.com.es/medio/2015/10/20/victoria_1000x687.jpg"
+          type="image/jpeg"
           alt="Cataratas Victoria"
           title="Cataratas Victoria"
-          width="30%"
+          width="29.2%"
         />
       </div>
 
       <a href="../index.html">
         <button class="inicio">
-          <svg
-            fill="white"
-            xmlns="http://www.w3.org/2000/svg"
-            height="35"
-            viewBox="0 0 24 24"
-            width="35"
-            fill="#FFFFFF"
-          >
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-.61.08-1.21.21-1.78L8.99 15v1c0 1.1.9 2 2 2v1.93C7.06 19.43 4 16.07 4 12zm13.89 5.4c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41C17.92 5.77 20 8.65 20 12c0 2.08-.81 3.98-2.11 5.4z"
-            />
-          </svg>
+          <img
+            src="../../assets/inicio.svg"
+            type="image/svg+xml"
+            alt="Inicio"
+            title="Inicio"
+          />
         </button>
       </a>
     </div>
