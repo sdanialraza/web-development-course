@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../assets/terror/terror.svg" />
+    <style>
+      body {
+        background-color: #333;
+        background-image: url(../../assets/background.jpg);
+        filter: brightness(110%);
+        -webkit-filter: brightness(110%);
+        -moz-filter: brightness(110%);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        animation: spider-anima 12s ease-out;
+        animation-fill-mode: forwards;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      @keyframes spider-anima {
+        0% {
+          top: -100px;
+        }
+        50% {
+          top: 50%;
+        }
+      }
+      .container .eye {
+        background-color: #fff;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+      }
+      .container .eye-right {
+        right: 6px;
+      }
+      .container .eye-left {
+        left: 6px;
+      }
+      .spider-web {
+        animation: spider-web-anima 6s ease-out;
+        animation-fill-mode: forwards;
+        background-color: #fff;
+        border-radius: 4px;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 2px;
+      }
+      @keyframes spider-web-anima {
+        0% {
+          height: 0;
+          top: -100px;
+        }
+        100% {
+          height: 50vh;
+          top: 0;
+        }
+      }
+      .spider-body {
+        background-color: #000;
+        border-radius: 50%;
+        height: 20px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+      }
+      .spider-body:before {
+        content: "";
+        background-color: #000;
+        border-radius: 50%;
+        height: 15px;
+        left: 2.5px;
+        position: absolute;
+        top: -5px;
+        width: 15px;
+        z-index: -99;
+      }
+      .right {
+        transform: rotateY(180deg);
+      }
+      .arm-container .arm {
+        background-color: #000;
+        border-radius: 4px;
+        height: 4px;
+        position: absolute;
+        transform-origin: center left;
+        width: 30px;
+      }
+      .arm-container .A {
+        animation: A-anima 3s infinite ease-in-out;
+        transform: rotate(75deg);
+      }
+      @keyframes A-anima {
+        0% {
+          transform: rotate(75deg);
+        }
+        50% {
+          transform: rotate(-70deg);
+        }
+      }
+      .arm-container .A:nth-child(2) {
+        animation-delay: -0.2s;
+      }
+      .arm-container .A:nth-child(3) {
+        animation-delay: -0.5s;
+      }
+      .arm-container .A:nth-child(4) {
+        animation-delay: -0.4s;
+      }
+      .arm-container .B {
+        animation: B-anima 3s infinite ease-in-out;
+        left: calc(100% - 2px);
+        transform: rotate(10deg);
+      }
+      @keyframes B-anima {
+        0% {
+          transform: rotate(10deg);
+        }
+        50% {
+          transform: rotate(120deg);
+        }
+        80% {
+          transform: rotate(20deg);
+        }
+      }
+      .arm-container .C {
+        animation: C-anima 3s infinite ease-in-out;
+        left: calc(100% - 2px);
+        transform: rotate(10deg);
+      }
+      @keyframes C-anima {
+        0% {
+          transform: rotate(10deg);
+        }
+        50% {
+          transform: rotate(90deg);
+        }
+        80% {
+          transform: rotate(10deg);
+        }
+      }
+      .shadow {
+        left: calc(50% + 10px);
+        background-color: rgba(45, 45, 45, 0.5);
+      }
+      .shadow .arm {
+        background-color: rgba(45, 45, 45, 0.5);
+      }
+      .shadow-body {
+        background-color: rgba(45, 45, 45, 0.5);
+      }
+      .shadow-body:before {
+        background-color: rgba(45, 45, 45, 0.5);
+      }
+      .shadow-body .eye {
+        display: none;
+      }
+      nav {
+        align-items: center;
+        background-color: #333;
+        background-image: url(../../assets/background.jpg);
+        filter: brightness(110%);
+        -webkit-filter: brightness(110%);
+        -moz-filter: brightness(110%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: #595959 solid 10px;
+        border-radius: 33px;
+        padding: 15px;
+        text-align: center;
+      }
+      button {
+        padding: 1em 2.7em;
+        background-color: #1f2937;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.6em;
+      }
+      button a {
+        color: whitesmoke;
+        font-size: x-large;
+        text-decoration: none;
+      }
+      .terror {
+        color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      .titulo {
+        font-size: 40px;
+      }
+      .descripcion {
+        font-size: 24px;
+      }
+      .famosas {
+        color: whitesmoke;
+        font-size: 34px;
+        text-align: center;
+      }
+      .peliculas {
+        display: flex;
+        align-items: center;
+        color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        text-align: center;
+      }
+      img:hover {
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 0.5s;
+      }
+      @keyframes fadeInOpacity {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .recaudacion {
+        color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: xx-large;
+        margin: 5%;
+        text-align: center;
+      }
+      table caption {
+        font-size: 28px;
+        font-weight: bolder;
+      }
+      button:hover {
+        transform: scale(1.15);
+        transition: 0.25s;
+      }
+      button:not(:hover) {
+        transform: scale(1);
+        transition: 0.25s;
+      }
+    </style>
+
+    <title>Terror</title>
+  </head>
+  <body>
+    <header>
+      <div class="spider-web shadow"></div>
+      <div class="container shadow">
+        <div class="arm-container right">
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+        </div>
+        <div class="arm-container left">
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+        </div>
+        <div class="spider-body shadow-body">
+          <div class="eye eye-left"></div>
+          <div class="eye eye-right"></div>
+        </div>
+      </div>
+
+      <div class="spider-web"></div>
+      <div class="container">
+        <div class="arm-container right">
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+        </div>
+        <div class="arm-container left">
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+          <div class="arm A">
+            <div class="arm B"><div class="arm C"></div></div>
+          </div>
+        </div>
+        <div class="spider-body">
+          <div class="eye eye-left"></div>
+          <div class="eye eye-right"></div>
+        </div>
+      </div>
+
+      <nav id="arriba">
+        <button>
+          <a href="../index.html">Inicio</a>
+        </button>
+        &nbsp;
+        <button>
+          <a href="accion.html">Acción</a>
+        </button>
+        &nbsp;
+        <button>
+          <a href="comedia.html">Comedia</a>
+        </button>
+        &nbsp;
+        <button>
+          <a href="drama.html">Drama</a>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="terror">
+        <p class="titulo">
+          <u><strong>Terror</strong></u>
+        </p>
+        <p class="descripcion">
+          El terror es un género cinematográfico que busca provocar miedo o
+          disgusto en su audiencia con fines de entretenimiento. Las películas
+          de terror a menudo exploran temas oscuros y pueden tratar temas o
+          temas transgresores. Los elementos generales incluyen monstruos,
+          eventos apocalípticos y creencias religiosas o populares.
+        </p>
+      </section>
+      <p class="famosas">
+        <strong>Peliculas terror famosas</strong>
+      </p>
+      <section class="peliculas">
+        <figure>
+          <a href="https://www.imdb.com/title/tt0144084/" target="_blank"
+            ><img
+              src="../../assets/terror/american-psycho.png"
+              alt="Psicópata Americano"
+              title="Psicópata americano"
+            />
+          </a>
+          <figcaption><strong>Psicópata Americano</strong></figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.imdb.com/title/tt1457767/" target="_blank"
+            ><img
+              src="../../assets/terror/the-conjuring.jpg"
+              alt="Expediente Warren: The Conjuring"
+              title="Expediente Warren: The Conjuring"
+          /></a>
+          <figcaption>
+            <strong>Expediente Warren: The Conjuring</strong>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.imdb.com/title/tt0081505/" target="_blank">
+            <img
+              src="../../assets/terror/the-shining.jpg"
+              alt="El resplandor"
+              title="El resplandor"
+            />
+          </a>
+          <figcaption><strong>El resplandor</strong></figcaption>
+        </figure>
+      </section>
+      <section class="recaudacion">
+        <table align="center" border="10px" cellpadding="25px">
+          <caption>
+            Películas terror con mayor recaudación de la historia
+          </caption>
+          <tr>
+            <th>Pelicula</th>
+            <th>Recaudación</th>
+          </tr>
+          <tr>
+            <td>It (Eso)</td>
+            <td>$700 milliones</td>
+          </tr>
+          <tr>
+            <td>El sexto sentido</td>
+            <td>$672 milliones</td>
+          </tr>
+          <tr>
+            <td>Soy leyenda</td>
+            <td>$585 milliones</td>
+          </tr>
+          <tr>
+            <td>Guerra mundial Z</td>
+            <td>$540 milliones</td>
+          </tr>
+          <tr>
+            <td>It: Capítulo Dos</td>
+            <td>$473 milliones</td>
+          </tr>
+        </table>
+      </section>
+      <center>
+        <button>
+          <a href="#arriba">Arriba</a>
+        </button>
+      </center>
+    </main>
+  </body>
+</html>
