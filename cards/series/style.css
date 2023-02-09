@@ -1,0 +1,59 @@
+* {
+  background-color: #2b2a33;
+  color: whitesmoke;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h1 {
+  font-family: sans-serif, Arial, Helvetica;
+  text-align: center;
+}
+
+h3 {
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+.introduccion {
+  column-count: 2;
+  column-gap: 25px;
+  column-rule: 1px solid whitesmoke;
+  font-family: sans-serif, Arial, Helvetica;
+  text-align: justify;
+  text-indent: 90px;
+}
+
+.informacion {
+  background-color: #4d4c5a;
+  font-family: sans-serif, Arial, Helvetica;
+  height: 200px;
+  overflow: auto;
+  padding: 10px;
+  text-align: justify;
+}
+
+button {
+  background-color: #6787b5;
+  border: none;
+  border-radius: 0.6em;
+  margin-left: 45%;
+  margin-right: 45%;
+  overflow: hidden;
+  padding: 1em 2.7em;
+}
+
+button a {
+  color: whitesmoke;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+button:hover {
+  transform: scale(1.15);
+  transition: 0.25s;
+}
+
+button:not(:hover) {
+  transform: scale(1);
+  transition: 0.25s;
+}
