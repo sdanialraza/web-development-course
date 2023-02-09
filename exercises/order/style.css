@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  width: 1200px;
+}
+
+.container div {
+  width: 100px;
+  height: 200px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.div1 {
+  background-color: aqua;
+}
+
+.div2 {
+  background-color: rgb(119, 0, 255);
+}
+
+.div3 {
+  background-color: rgb(64, 255, 0);
+}
+
+.div4 {
+  background-color: rgb(255, 0, 204);
+}
+
+.div5 {
+  background-color: rgb(255, 238, 0);
+}
+
+.div6 {
+  background-color: rgb(77, 255, 0);
+}
+
+.div7 {
+  background-color: rgb(255, 162, 0);
+}
+
+.container2 {
+  display: flex;
+  width: 1200px;
+  color: red;
+}
+
+.container2 div {
+  width: 100px;
+  height: 200px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.container3 {
+  display: flex;
+  width: 1200px;
+}
+
+.container3 div {
+  width: 100px;
+  height: 200px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.div4 {
+  align-self: flex-end;
+}
+
+.container4 {
+  display: flex;
+  width: 1200px;
+}
+
+.container4 div {
+  width: 100px;
+  height: 200px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.container4 .a {
+  background-color: aqua;
+  order: +2;
+}
+
+.container4 .b {
+  background-color: rgb(119, 0, 255);
+  order: 1;
+}
+
+.container4 .c {
+  background-color: rgb(64, 255, 0);
+  order: 0;
+}
+
+.container4 .d {
+  background-color: rgb(255, 0, 204);
+  order: -1;
+}
+
+.container4 .e {
+  background-color: rgb(255, 238, 0);
+  order: -2;
+}
+
+.container4 .f {
+  background-color: rgb(77, 255, 0);
+  order: +3;
+}
+
+.container4 .g {
+  background-color: rgb(255, 162, 0);
+  order: -3;
+}
