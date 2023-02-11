@@ -1,0 +1,78 @@
+.container {
+  align-content: center;
+  border: 5px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: xx-large;
+  font-weight: bolder;
+  justify-content: center;
+  height: 95vh;
+}
+
+.container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container :nth-child(1) {
+  background-color: rgb(255, 0, 0);
+  height: 100px;
+  width: 500px;
+}
+
+.container :nth-child(2) {
+  background-color: rgb(255, 162, 0);
+  height: 100px;
+  width: 500px;
+}
+
+.container :nth-child(3) {
+  background-color: rgb(255, 255, 0);
+  height: 100px;
+  width: 500px;
+}
+
+.container :nth-child(4) {
+  background-color: rgb(0, 255, 0);
+  height: 100px;
+  width: 500px;
+}
+
+.container :nth-child(5) {
+  background-color: rgb(0, 0, 255);
+  height: 100px;
+  width: 500px;
+}
+
+.container :nth-child(6) {
+  background-color: rgb(114, 12, 187);
+  height: 100px;
+  width: 500px;
+}
+
+.container :nth-child(7) {
+  background-color: rgb(148, 0, 211);
+  height: 100px;
+  width: 500px;
+}
+
+.container :nth-child(8) {
+  background-color: rgb(255, 0, 255);
+  height: 100px;
+  width: 500px;
+}
+
+.container :nth-child(9) {
+  background-color: rgb(255, 0, 0);
+  height: 100px;
+  width: 500px;
+}
+
+.container :nth-child(10) {
+  background-color: rgb(255, 162, 0);
+  height: 100px;
+  width: 500px;
+}

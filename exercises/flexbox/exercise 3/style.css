@@ -1,0 +1,57 @@
+.container {
+  align-content: center;
+  border: 5px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  font-size: larger;
+  font-weight: bold;
+  height: 95vh;
+  text-align: center;
+}
+
+.container div {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.container :nth-child(1) {
+  background-color: rgb(255, 0, 0);
+}
+
+.container :nth-child(2) {
+  background-color: rgb(255, 162, 0);
+}
+
+.container :nth-child(3) {
+  background-color: rgb(255, 255, 0);
+}
+
+.container :nth-child(4) {
+  background-color: rgb(0, 255, 0);
+}
+
+.container :nth-child(5) {
+  background-color: rgb(0, 0, 255);
+}
+
+.container :nth-child(6) {
+  background-color: rgb(114, 12, 187);
+}
+
+.container :nth-child(7) {
+  background-color: rgb(148, 0, 211);
+}
+
+.container :nth-child(8) {
+  background-color: rgb(255, 0, 255);
+}
+
+.container :nth-child(9) {
+  background-color: rgb(255, 0, 0);
+}
+
+.container :nth-child(10) {
+  background-color: rgb(255, 162, 0);
+}

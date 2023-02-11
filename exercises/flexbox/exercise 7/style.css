@@ -1,0 +1,105 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(218, 164, 173),
+    rgb(33, 174, 218)
+  );
+}
+
+.container {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  height: 95vh;
+  justify-content: center;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container h1 {
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.container h2 {
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+.container h3 {
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+.card1 {
+  align-self: center;
+  background-color: rgba(245, 245, 245, 0.25);
+  color: whitesmoke;
+  height: 550px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 275px;
+}
+
+.card2 {
+  background-color: rgba(245, 245, 245, 0.25);
+  color: whitesmoke;
+  height: 700px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 275px;
+}
+
+.card3 {
+  align-self: center;
+  background-color: rgba(245, 245, 245, 0.25);
+  color: whitesmoke;
+  height: 500px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 275px;
+}
+
+button {
+    background-color: yellow;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 50px;
+    margin: auto;
+    width: 200px;
+}
+
+button a {
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container div:hover {
+  transform: rotate(0.5deg) scale(1.1);
+  transition: 0.5s;
+}
+
+.container div:not(hover) {
+  transform: rotate(0deg) scale(1);
+  transition: 0.5s;
+}

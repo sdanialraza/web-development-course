@@ -1,0 +1,49 @@
+.container {
+  align-content: center;
+  border: 5px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  font-size: x-large;
+  font-weight: bold;
+  height: 50vh;
+  padding: 20px;
+}
+
+.container div {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 250px;
+}
+
+.container :nth-child(1) {
+  background-color: rgb(255, 0, 0);
+  height: 150px;
+}
+
+.container :nth-child(2) {
+  background-color: rgb(255, 162, 0);
+  height: 125px;
+}
+
+.container :nth-child(3) {
+  background-color: rgb(255, 255, 0);
+  height: 150px;
+}
+
+.container :nth-child(4) {
+  background-color: rgb(0, 255, 0);
+  height: 45px;
+}
+
+.container :nth-child(5) {
+  background-color: rgb(0, 0, 255);
+  height: 235px;
+}
+
+.container :nth-child(6) {
+  background-color: rgb(114, 12, 187);
+  height: 235px;
+}

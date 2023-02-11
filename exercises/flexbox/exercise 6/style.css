@@ -1,0 +1,48 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(218, 164, 173),
+    rgb(33, 174, 218)
+  );
+}
+
+.container {
+  align-items: center;
+  border: 5px solid black;
+  color: whitesmoke;
+  display: flex;
+  font-family: sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  justify-content: center;
+  height: 60px;
+}
+
+.container .items div {
+  display: flex inline;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 250px;
+}
+
+.container .items div a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.container .iconos div {
+  display: flex inline;
+  text-align: center;
+  height: 50px;
+  width: 250px;
+}
+
+.container .iconos div a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.container .iconos div {
+  height: 25px;
+  width: 25px;
+}
