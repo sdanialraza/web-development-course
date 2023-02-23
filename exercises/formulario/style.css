@@ -9,9 +9,9 @@ body {
 }
 
 .container {
-  animation: moveUpAndDown 5s ease-in-out infinite;
+  animation: moveUpAndDown 2.5s ease-in-out infinite;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0px;
   height: 95vh;
   justify-content: center;
@@ -24,7 +24,7 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(5px);
+    transform: translateY(7.5px);
     text-shadow: -1px -1px 0 #6080b2, 1px -1px 0 #6080b2, -1px 1px 0 #6080b2,
       1px 1px 0 #6080b2;
   }
@@ -123,6 +123,7 @@ input {
 }
 
 input:focus {
+  background-color: lightgray;
   width: 215px;
 }
 
