@@ -1,0 +1,104 @@
+body {
+  animation: fadeInRight 0.6s ease-in-out;
+  background-color: #212121;
+  color: whitesmoke;
+  font-family: sans-serif;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: scale(1.5) translateX(300px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+header {
+  background-image: url(assets/football-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2.5px solid whitesmoke;
+  border-radius: 15px;
+  padding: 75px;
+  text-align: center;
+}
+
+main {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+nav {
+  border: 2.5px solid whitesmoke;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  padding-top: 25px;
+}
+
+section h2 {
+  text-align: center;
+}
+
+section {
+  border: 2.5px solid whitesmoke;
+  border-radius: 15px;
+  display: flex;
+  flex-grow: 3;
+  padding: 25px;
+  text-align: center;
+}
+
+aside {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  line-height: 1px;
+  padding: 10px;
+    text-align: center;
+}
+
+aside img {
+  border: 2.5px solid whitesmoke;
+  border-radius: 15px;
+  display: block;
+  margin: auto;
+  width: 350px;
+  z-index: -2;
+}
+
+footer {
+  text-align: center;
+}
+
+button {
+  background-color: #444;
+  border: 5px solid #333;
+  border-radius: 10px;
+  font-size: 1.25em;
+  margin: 5px;
+  padding: 5px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.25s;
+}
+
+button a {
+  color: whitesmoke;
+  text-decoration: none;
+}
