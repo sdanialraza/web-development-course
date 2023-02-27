@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/icon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Wok Japones</title>
+  </head>
+  <body>
+    <header>
+      <div class="imagen"></div>
+    </header>
+    <div class="container">
+      <div class="card">
+        <fieldset>
+          <legend>Informacion Personal</legend>
+          <form method="GET">
+            <label for="nombre">Nombre</label>
+            <input
+              autofocus
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+              type="text"
+            />
+          </form>
+        </fieldset>
+        <fieldset>
+          <legend>Tu Pedido</legend>
+          <div class="wok">
+            <label for="wok">Tipo de Wok</label>
+            <select id="wok" name="wok">
+              <option value="camaronesAlAjillo">Camarones al ajillo</option>
+              <option value="chowMein">Chow Mein</option>
+              <option value="carneBrocoli">Carne y brócoli</option>
+              <option value="loMein">Lo Mein</option>
+              <option value="yakisobaPolo">Yakisoba de pollo</option>
+            </select>
+          </div>
+          <div class="salsa">
+            <label for="barbacoa">Barbacoa</label>
+            <input id="barbacoa" value="barbacoa" type="range" />
+            <label for="picante">Picante</label>
+            <input type="range" id="picante" value="picante" />
+            <label for="soja">Soja</label>
+            <input type="range" id="soja" value="soja" />
+            <label for="tarayaki">Tarayaki</label>
+            <input type="range" id="tarayaki" value="tarayaki" />
+          </div>
+          <div class="domicilio">
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="domicilio"
+                  id="domicilio"
+                  value="domicilio"
+                />
+                <label for="domicilio">Domicilio</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="domicilio"
+                  id="recoger"
+                  value="recoger"
+                />
+                <label for="recoger">Recoger</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
