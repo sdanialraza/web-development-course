@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/icon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Formulario de Entrada</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulario de Entrada</h1>
+      <form action="paginas/entrada.html" method="POST">
+        <fieldset class="datosDeAsistente">
+          <legend>Datos del Asistente</legend>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" required />
+          <label for="edad">Edad</label>
+          <input
+            id="edad"
+            min="10"
+            max="18"
+            name="edad"
+            type="number"
+            required
+          />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <label for="comentarios">Comentarios</label>
+          <textarea
+            id="comentarios"
+            maxlength="250"
+            name="comentarios"
+            required
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Comida, Bebida y Sesion</legend>
+          <label for="comida">Palomitas</label>
+          <select name="palomitas" id="palomitas">
+            <option value="saladas">Saladas</option>
+            <option value="dulces">Dulces</option>
+            <option value="caramelos">Caramelos</option>
+          </select>
+          <h3>Bebidas</h3>
+          <input name="agua" id="agua" type="checkbox" />
+          <label for="agua">Agua</label>
+          <input name="coca-cola" id="coca-cola" type="checkbox" />
+          <label for="coca-cola">Coca-Cola</label>
+          <input name="fanta" id="fanta" type="checkbox" />
+          <label for="fanta">Fanta</label>
+          <input name="limonada" id="limonada" type="checkbox" />
+          <label for="limonada">Limonada</label>
+          <input name="sprite" id="sprite" type="checkbox" />
+          <label for="sprite">Sprite</label>
+          <h3>Sesiones</h3>
+          <input name="sesiones" id="16:00" type="radio" />
+          <label for="16:00">16:00</label>
+          <input name="sesiones" id="18:00" type="radio" />
+          <label for="18:00">18:00</label>
+          <input name="sesiones" id="20:00" type="radio" />
+          <label for="20:00">20:00</label>
+          <input name="sesiones" id="22:00" type="radio" />
+          <label for="22:00">22:00</label>
+        </fieldset>
+        <button type="submit">Entregar</button>
+      </form>
+    </div>
+  </body>
+</html>
