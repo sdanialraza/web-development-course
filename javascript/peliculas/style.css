@@ -2,8 +2,9 @@ body {
     background-color: #1b2430;
     color: whitesmoke;
     text-align: center;
+    line-height: 0.5;
 }
 
 h1 {
-    font-size: xx-large;
+    line-height: normal;
 }
