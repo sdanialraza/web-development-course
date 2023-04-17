@@ -1,0 +1,28 @@
+body {
+  background-color: #1b2430;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 95vw;
+  height: 95vh;
+}
+
+.container .card {
+  height: 550px;
+  width: 550px;
+  transition: 0.5s;
+}
+
+.mensaje {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 500px;
+}
