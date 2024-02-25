@@ -1,7 +1,7 @@
 let fraseFinal;
 
 function createFrase(persona, accion, lugar) {
-    fraseFinal = `${persona} estaba ${accion} en ${lugar}`
+  fraseFinal = `${persona} estaba ${accion} en ${lugar}`;
 }
 
 const persona = prompt("Ingresa el nombre de una persona");

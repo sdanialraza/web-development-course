@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="payment1.css" />
+
+    <title>Auriculares | Tu Pedido</title>
+  </head>
+  <header>
+    <img src="../../assets/favicon.svg" alt="StereoBeats logo" title="StereoBeats logo" />
+    <h1>StereoBeats Auriculares</h1>
+  </header>
+  <body>
+    <div class="container">
+      <h1>Auriculares 1</h1>
+      <div class="card">
+        <fieldset>
+          <form action="payment2.html" class="informacion" method="GET">
+            <legend>1. Envio</legend>
+            <input id="nombre" name="nombre" placeholder="Nombre y Apellidos" required type="text" />
+            <input id="direccion" name="direccion" placeholder="Direccion" required type="text" />
+            <input
+              id="telefono"
+              max="9"
+              maxlength="9"
+              min="1"
+              minlength="1"
+              name="telefono"
+              placeholder="Telefono"
+              required
+              type="tel"
+            />
+            <input id="Siguiente" type="submit" value="Siguiente" />
+          </form>
+        </fieldset>
+      </div>
+      <a href="../../index.html"><button>Volver a Inicio</button></a>
+    </div>
+  </body>
+</html>

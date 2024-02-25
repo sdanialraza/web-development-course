@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="payment2.css" />
+
+    <title>Auriculares | Tu Pedido</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Auriculares</h1>
+      <div class="card">
+        <fieldset>
+          <form action="payment3.html" class="tarjeta" method="GET">
+            <legend>2. Pago</legend>
+            <input
+              id="numeroTarjeta"
+              inputmode="numeric"
+              max="19"
+              maxlength="19"
+              min="19"
+              minlength="19"
+              name="numeroTarjeta"
+              placeholder="Numero de Tarjeta"
+              required
+              type="text"
+            />
+            <input
+              id="fechaExpiracion"
+              inputmode="numeric"
+              max="4"
+              maxlength="4"
+              min="4"
+              minlength="4"
+              name="fechaExpiracion"
+              placeholder="Fecha de Expiracion"
+              required
+              type="text"
+            />
+            <input
+              id="cvc"
+              inputmode="numeric"
+              max="3"
+              maxlength="3"
+              min="3"
+              minlength="3"
+              name="cvc"
+              placeholder="CVC / CVV"
+              required
+              type="text"
+            />
+            <input id="comprar" type="submit" value="Comprar" />
+          </form>
+        </fieldset>
+      </div>
+      <a href="../../index.html"><button>Volver a Inicio</button></a>
+    </div>
+  </body>
+  <script>
+    try {
+      const numeroTarjeta = document.getElementById("numeroTarjeta");
+
+      numeroTarjeta.addEventListener("input", input => {
+        let value = input.target.value;
+        value = value.replace(/\s/g, "");
+        value = value.replace(/\D/g, "");
+        value = value.replace(/([0-9]{4})/g, "$1 ");
+        value = value.trim();
+        input.target.value = valor;
+      });
+    } catch (error) {
+      throw new Error(error);
+    }
+  </script>
+</html>

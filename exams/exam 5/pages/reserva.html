@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="reserva.css" />
+
+    <!-- Logos de las redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>SoliMar | Hotel</title>
+  </head>
+  <body id="arriba">
+    <header>
+      <img src="../assets/icon.svg" alt="SoliMar" title="SoliMar" />
+      <h1>SoliMar</h1>
+      <h3>Quédate una vez, lleva recuerdos para siempre</h3>
+    </header>
+    <main>
+      <nav>
+        <a href="../index.html"><button>Inicio</button></a>
+        <a href="habitaciones.html"><button>Habitaciones</button></a>
+        <hr />
+      </nav>
+      <div class="container">
+        <div class="imagen"></div>
+        <div class="card">
+          <form action="reservado.html" method="GET">
+            <fieldset>
+              <legend>Formulario de reservación</legend>
+              <label for="nombreApellidos">Nombre y Apellidos</label>
+              <input
+                autofocus
+                id="nombreApellidos"
+                name="nombreApellidos"
+                placeholder="Nombre y Apellidos"
+                required
+                type="text"
+              />
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" placeholder="Correo electrónico" required type="email" />
+              <label for="telefono">Teléfono</label>
+              <input id="telefono" maxlength="9" name="telefono" placeholder="Teléfono" required type="tel" />
+              <label for="habitacion">Habitación</label>
+              <select id="habitacion" name="habitacion">
+                <option value="deluxe">Deluxe</option>
+                <option value="luxury">Luxury Suite</option>
+                <option value="skyMasterSuite">Sky Master Suite</option>
+                <option value="standard">Standard</option>
+              </select>
+              <label for="fechaEntrada">Fecha de Entrada</label>
+              <input id="fechaEntrada" name="fechaEntrada" placeholder="Fecha de entrada" required type="date" />
+              <label for="fechaSalida">Fecha de salida</label>
+              <input id="fechaSalida" name="fechaSalida" placeholder="Fecha de salida" required type="date" />
+              <button type="submit">Reservar</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <hr />
+    </main>
+    <footer>
+      <a class="fa fa-facebook fa-3x" href="https://www.faceboook.com/" id="facebook" target="_blank"></a>
+
+      <a class="fa fa-github fa-3x" href="https://www.github.com/" id="github" target="_blank"></a>
+      <a class="fa fa-instagram fa-3x" href="https://www.instagram.com/" id="instagram" target="_blank"></a>
+      <a class="fa fa-twitter fa-3x" href="https://www.twitter.com/" id="twitter" target="_blank"></a>
+      <a class="fa fa-youtube fa-3x" href="https://www.youtube.com/" id="youtube" target="_blank"></a>
+      <br />
+      <a href="#arriba"><button class="arriba">Arriba</button></a>
+    </footer>
+  </body>
+</html>

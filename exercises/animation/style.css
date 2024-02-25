@@ -1,0 +1,51 @@
+body {
+  background-color: #1b2430;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 95vw;
+  height: 95vh;
+}
+
+.container .animacionSimple {
+  background-color: #f1c40f;
+  height: 250px;
+  width: 250px;
+  transition: 0.5s;
+}
+
+.container .animacionSimple:active {
+  background-color: #e67e22;
+  border-radius: 50%;
+  transform: scale(1.1) rotateX(180deg);
+  transition: 0.5s;
+  box-shadow: #e67e22 0px 0px 35px;
+}
+
+.container .ball {
+  background-color: #3498db;
+  border-radius: 50%;
+  height: 250px;
+  position: relative;
+  width: 250px;
+  animation: rebotar 2s ease-in-out infinite;
+  animation-direction: alternate;
+  animation-play-state: paused;
+}
+
+@keyframes rebotar {
+  from {
+    top: 0;
+  }
+  to {
+    background-color: aquamarine;
+    top: 25vh;
+    transform: scale(70%, 55%);
+  }
+}

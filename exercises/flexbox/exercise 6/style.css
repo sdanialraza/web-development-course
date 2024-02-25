@@ -1,9 +1,5 @@
 body {
-  background-image: linear-gradient(
-    to right,
-    rgb(218, 164, 173),
-    rgb(33, 174, 218)
-  );
+  background-image: linear-gradient(to right, rgb(218, 164, 173), rgb(33, 174, 218));
 }
 
 .container {

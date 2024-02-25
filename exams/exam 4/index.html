@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -12,29 +12,17 @@
   <body>
     <div class="container">
       <h1>Formulario de Entrada</h1>
-      <form action="paginas/entrada.html" method="POST">
+      <form action="pages/entrada.html" method="POST">
         <fieldset class="datosDeAsistente">
           <legend>Datos del Asistente</legend>
           <label for="nombre">Nombre</label>
           <input id="nombre" name="nombre" type="text" required />
           <label for="edad">Edad</label>
-          <input
-            id="edad"
-            min="10"
-            max="18"
-            name="edad"
-            type="number"
-            required
-          />
+          <input id="edad" min="10" max="18" name="edad" type="number" required />
           <label for="email">Email</label>
           <input id="email" name="email" type="email" required />
           <label for="comentarios">Comentarios</label>
-          <textarea
-            id="comentarios"
-            maxlength="250"
-            name="comentarios"
-            required
-          ></textarea>
+          <textarea id="comentarios" maxlength="250" name="comentarios" required></textarea>
         </fieldset>
         <fieldset>
           <legend>Comida, Bebida y Sesion</legend>

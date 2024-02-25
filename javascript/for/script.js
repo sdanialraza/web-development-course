@@ -29,10 +29,11 @@ while (i >= 5) {
 // Ejercicio 4
 let suma = 0;
 
-for (let i = 1; i <= 5; i++) { // i = i + 1
-    const numero = Number(prompt("Ingrese un numero"));
-    suma += numero;
-    console.log(`Suma: ${suma}`);
+for (let i = 1; i <= 5; i++) {
+  // i = i + 1
+  const numero = Number(prompt("Ingrese un numero"));
+  suma += numero;
+  console.log(`Suma: ${suma}`);
 }
 document.write(`<h1> La suma de los numeros es: ${suma} </h1>`);
 console.log("Operacion finalizada");

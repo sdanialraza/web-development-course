@@ -1,61 +1,61 @@
 .container {
-    border: 5px solid black;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    font-size: xx-large;
-    font-weight: bold;
-    height: 95vh;
-    justify-content: center;
-  }
+  border: 5px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  font-size: xx-large;
+  font-weight: bold;
+  height: 95vh;
+  justify-content: center;
+}
 
-  .container div {
-    display: flex;
-    height: 50px;
-    justify-content: center;
-    text-align: center;
-    width: 100px;
-  }
-  
-  .container :nth-child(1) {
-    background-color: rgb(255, 0, 0);
-  }
-  
-  .container :nth-child(2) {
-    background-color: rgb(255, 162, 0);
-    height: auto;
-  }
-  
-  .container :nth-child(3) {
-    background-color: rgb(255, 255, 0);
-  }
-  
-  .container :nth-child(4) {
-    background-color: rgb(0, 255, 0);
-  }
-  
-  .container :nth-child(5) {
-    background-color: rgb(0, 0, 255);
-  }
-  
-  .container :nth-child(6) {
-    align-self: center;
-    background-color: rgb(114, 12, 187);
-  }
-  
-  .container :nth-child(7) {
-    background-color: rgb(148, 0, 211);
-  }
-  
-  .container :nth-child(8) {
-    background-color: rgb(255, 0, 255);
-  }
-  
-  .container :nth-child(9) {
-    align-self: flex-end;
-    background-color: rgb(255, 0, 0);
-  }
-  
-  .container :nth-child(10) {
-    background-color: rgb(255, 162, 0);
-  }
+.container div {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+}
+
+.container :nth-child(1) {
+  background-color: rgb(255, 0, 0);
+}
+
+.container :nth-child(2) {
+  background-color: rgb(255, 162, 0);
+  height: auto;
+}
+
+.container :nth-child(3) {
+  background-color: rgb(255, 255, 0);
+}
+
+.container :nth-child(4) {
+  background-color: rgb(0, 255, 0);
+}
+
+.container :nth-child(5) {
+  background-color: rgb(0, 0, 255);
+}
+
+.container :nth-child(6) {
+  align-self: center;
+  background-color: rgb(114, 12, 187);
+}
+
+.container :nth-child(7) {
+  background-color: rgb(148, 0, 211);
+}
+
+.container :nth-child(8) {
+  background-color: rgb(255, 0, 255);
+}
+
+.container :nth-child(9) {
+  align-self: flex-end;
+  background-color: rgb(255, 0, 0);
+}
+
+.container :nth-child(10) {
+  background-color: rgb(255, 162, 0);
+}

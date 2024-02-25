@@ -1,30 +1,48 @@
-const numero1 = Number(prompt("Ingrese el primer número:"));
-const simbolo = prompt("Ingrese el símbolo de la operación que desea realizar: sumar, restar, multiplicar o dividir");
-const numero2 = Number(prompt("Ingrese el segundo número:"));
-
-if (simbolo == "+") document.write(`<h1> El resultado de la suma es: ${Math.round(numero1 + numero2)} </h1>`);
-else if (simbolo == "-") document.write(`<h1> El resultado de la resta es: ${Math.round(numero1 - numero2)} </h1>`);
-else if (simbolo == "*") document.write(`<h1> El resultado de la multiplicación es: ${Math.round(numero1 * numero2)} </h1>`);
-else if (simbolo == "/") document.write(`<h1> El resultado de la división es: ${Math.round(numero1 / numero2)} </h1>`);
-else document.write(`<h1> El símbolo ingresado no es válido </h1>`);
-
-/*
-Usando switch
-
-const numero1 = Number(prompt("Ingrese el primer número:"));
-const simbolo = prompt("Ingrese el símbolo de la operación que desea realizar: sumar, restar, multiplicar o dividir");
-const numero2 = Number(prompt("Ingrese el segundo número:"));
-
-switch (simbolo) {
-    case "+": document.write(`<h1> El resultado de la suma es: ${Math.round(numero1 + numero2)} </h1>`);
-        break;
-    case "-": (simbolo == "-") document.write(`<h1> El resultado de la resta es: ${Math.round(numero1 - numero2)} </h1>`);
-        break;
-    case "*": (simbolo == "*") document.write(`<h1> El resultado de la multiplicación es: ${Math.round(numero1 * numero2)} </h1>`);
-        break;
-    case "/": document.write(`<h1> El resultado de la división es: ${Math.round(numero1 / numero2)} </h1>`);
-        break;
-    default: document.write(`<h1> El símbolo ingresado no es válido </h1>`);
-        break;
+function sumar(numero1, numero2) {
+  return numero1 + numero2;
 }
-*/
+function restar(numero1, numero2) {
+  return numero1 - numero2;
+}
+function multiplicacion(numero1, numero2) {
+  return numero1 * numero2;
+}
+function division(numero1, numero2) {
+  return numero1 / numero2;
+}
+
+let numero1 = parseFloat(prompt("Ingrese el primer número"));
+let simbolo = prompt("Ingrese el símbolo de la operación que desea realizar: sumar, restar, multiplicar o dividir");
+let numero2 = parseFloat(prompt("Ingrese el segundo número"));
+let continuar = true;
+
+while (continuar) {
+  let resultado;
+
+  switch (simbolo) {
+    case "+":
+      resultado = sumar(numero1, numero2);
+      break;
+    case "-":
+      resultado = restar(numero1, numero2);
+      break;
+    case "*":
+      resultado = multiplicacion(numero1, numero2);
+      break;
+    case "/":
+      resultado = division(numero1, numero2);
+      break;
+    default:
+      alert("No ingresó un símbolo válido");
+      break;
+  }
+
+  if (resultado) alert(`El resultado de la operación es: ${resultado.toFixed(2)}`);
+
+  continuar = confirm("¿Desea realizar otra operación?");
+  if (!continuar) break;
+
+  numero1 = parseFloat(prompt("Ingrese el primer número"));
+  simbolo = prompt("Ingrese el símbolo de la operación que desea realizar: sumar, restar, multiplicar o dividir");
+  numero2 = parseFloat(prompt("Ingrese el segundo número"));
+}

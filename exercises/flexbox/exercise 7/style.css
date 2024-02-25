@@ -1,9 +1,5 @@
 body {
-  background-image: linear-gradient(
-    to right,
-    rgb(218, 164, 173),
-    rgb(33, 174, 218)
-  );
+  background-image: linear-gradient(to right, rgb(218, 164, 173), rgb(33, 174, 218));
 }
 
 .container {
@@ -21,7 +17,7 @@ body {
 }
 
 .container a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container h1 {
@@ -31,19 +27,19 @@ body {
 }
 
 .container h2 {
-    color: black;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: xxx-large;
-    text-align: center;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: xxx-large;
+  text-align: center;
 }
 
 .container h3 {
-    color: black;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: large;
-    text-align: center;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
 }
 
 .card1 {
@@ -79,19 +75,19 @@ body {
 }
 
 button {
-    background-color: yellow;
-    font-family: sans-serif;
-    font-weight: bold;
-    height: 50px;
-    margin: auto;
-    width: 200px;
+  background-color: yellow;
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 50px;
+  margin: auto;
+  width: 200px;
 }
 
 button a {
-    color: black;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .container div:hover {
